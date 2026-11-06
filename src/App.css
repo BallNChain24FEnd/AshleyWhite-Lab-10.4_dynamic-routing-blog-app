@@ -23,7 +23,6 @@ h2 {
   margin-top: 2rem;
 }
 
-
 /* Blog card layout */
 .blog-grid {
   display: grid;
@@ -93,3 +92,39 @@ nav a:hover,
 .post-page a:hover {
   text-decoration: underline;
 }
+
+/* Navigation bar */
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Login card */
+.login-page {
+  background: #1e293b;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  border: 1px solid #475569;
+}
+
+.login-page h2 {
+  color: #e9d5ff;
+}
+
+/* Login and logout buttons */
+button {
+  background: #8b5cf6;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background: #7c3aed;
+}
+
