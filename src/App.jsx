@@ -1,5 +1,6 @@
 import { Routes, Route, Link } from "react-router-dom";
 import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 import "./App.css";
 
 // Main blog routes
@@ -18,7 +19,9 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Blog />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
       </Routes>
     </main>
   );
 }
+

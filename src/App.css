@@ -64,3 +64,32 @@ nav a:hover,
 .blog-card a:hover {
   text-decoration: underline;
 }
+
+/* Individual blog post page */
+.post-page {
+  background: #1e293b;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  border: 1px solid #475569;
+}
+
+.post-page h2 {
+  color: #e9d5ff;
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+
+.post-page p {
+  line-height: 1.8;
+  color: #e2e8f0;
+}
+
+.post-page a {
+  color: #c4b5fd;
+  text-decoration: none;
+}
+
+.post-page a:hover {
+  text-decoration: underline;
+}
