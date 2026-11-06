@@ -22,3 +22,45 @@ h2 {
   border-radius: 1rem;
   margin-top: 2rem;
 }
+
+
+/* Blog card layout */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Individual blog cards */
+.blog-card {
+  background: #1e293b;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid #475569;
+}
+
+.blog-card h3 {
+  color: #e9d5ff;
+}
+
+.blog-card p {
+  line-height: 1.6;
+}
+
+/* Navigation links */
+nav {
+  margin: 1.5rem 0 2rem;
+}
+
+nav a {
+  color: #c4b5fd;
+  margin-right: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover,
+.blog-card a:hover {
+  text-decoration: underline;
+}
