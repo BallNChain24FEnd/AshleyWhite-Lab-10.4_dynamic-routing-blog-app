@@ -1,0 +1,15 @@
+/* Global blog styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0f172a;
+  color: #f8fafc;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  color: #c4b5fd;
+}
