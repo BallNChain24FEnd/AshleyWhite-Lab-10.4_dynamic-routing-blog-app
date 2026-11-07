@@ -1,16 +1,63 @@
-# React + Vite
+# Lab 10.4 — Dynamic Routing Blog App
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## The Dev Journal
 
-Currently, two official plugins are available:
+A React blog application built with Vite, JavaScript JSX, and React Router. Users can explore blog posts, navigate dynamic pages, and access a protected admin dashboard after logging in.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+1. **Dynamic Blog Routing:** Displays blog posts using URL slugs and React Router's `useParams()`.
+2. **Authentication:** Uses React Context to simulate login and logout with conditional navigation.
+3. **Protected Admin Dashboard:** Redirects logged-out users to the login page.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Added Extra Features:** Responsive styling, hover effects, and a simple CSS fade-in animation.
 
-## Expanding the Oxlint configuration
+## Technologies
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- React (JavaScript JSX)
+- Vite
+- React Router
+- React Context API
+- CSS
+
+## Getting Started
+
+`npm install`
+`npm run dev`
+
+Open the localhost URL displayed in your terminal.
+
+To verify the production build:
+
+`npm run build`
+
+## Reflection Questions
+
+**1. How did you implement dynamic routing?**
+
+I used React Router with `/blog/:slug` and `useParams()` to display the correct blog post.
+
+**2. How did you manage authentication?**
+
+I used React Context and `useState` to share login and logout functionality across components.
+
+**3. How did you protect the Admin page?**
+
+I created a `ProtectedRoute` component that redirects logged-out users to `/login`.
+
+**4. What was challenging?**
+
+Connecting dynamic routes with authentication while keeping the components organized.
+
+## Resources
+
+- [React Documentation](https://react.dev/)
+- [React Router Documentation](https://reactrouter.com/)
+- [Vite Documentation](https://vite.dev/guide/)
+- [MDN Web Docs](https://developer.mozilla.org/)
+- [Google Search](https://www.google.com/)
+
+
+## Possible Future Improvement
+
+Add full fade-in/fade-out page transitions using Motion's `AnimatePresence` component.
