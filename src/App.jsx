@@ -1,8 +1,10 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import ProtectedRoute from "./components/ProtectedRoute";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import Login from "./pages/Login";
+import Admin from "./pages/Admin";
 import "./App.css";
 
 // Main blog application
@@ -20,8 +22,17 @@ export default function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/login" element={<Login />} />
+
+        {/* Protected admin page */}
+        <Route
+          path="/admin"
+          element={
+            <ProtectedRoute>
+              <Admin />
+            </ProtectedRoute>
+          }
+        />
       </Routes>
     </main>
   );
 }
-

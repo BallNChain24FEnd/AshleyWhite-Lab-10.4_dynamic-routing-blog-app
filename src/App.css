@@ -128,3 +128,37 @@ button:hover {
   background: #7c3aed;
 }
 
+/* Admin dashboard */
+.admin-page {
+  background: #1e293b;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  border: 1px solid #475569;
+}
+
+.admin-page h2 {
+  color: #e9d5ff;
+}
+
+/* Admin content card */
+.admin-card {
+  background: #334155;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: 0.8rem;
+}
+
+.admin-card h3 {
+  color: #c4b5fd;
+}
+
+.admin-card a {
+  color: #c4b5fd;
+  text-decoration: none;
+}
+
+.admin-card a:hover {
+  text-decoration: underline;
+}
+
